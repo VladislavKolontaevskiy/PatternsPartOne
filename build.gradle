@@ -25,9 +25,9 @@ repositories {
 dependencies {
     testImplementation 'com.codeborne:selenide:6.17.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation 'org.projectlombok:lombok:1.18.28'
+    testImplementation 'org.projectlombok:lombok:1.18.24'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.3'
 
 
