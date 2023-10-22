@@ -21,13 +21,13 @@ class DeliveryTest {
     }
 
     @Test
-    @DisplayName("Should successful plan and replan meeting")
-    void shouldSuccessfulPlanAndReplanMeeting() {
+    @DisplayName("shouldTestCardOrderTask1")
+    void shouldTestCardOrderTask1() {
         var validUser = DataGenerator.Registration.generateUser("ru");
-        var daysToAddForFirstMeeting = 4;
-        var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
-        var daysToAddForSecondMeeting = 7;
-        var secondMeetingDate = DataGenerator.generateDate(daysToAddForSecondMeeting);
+        var addDayForFirstMeeting = 3;
+        var firstMeetingDate = DataGenerator.generateDate(addDayForFirstMeeting);
+        var addDayForSecondMeeting = 8;
+        var secondMeetingDate = DataGenerator.generateDate(addDayForSecondMeeting);
         $("[data-test-id=city] input").setValue(validUser.getCity());
         $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id=date] input").setValue(firstMeetingDate);

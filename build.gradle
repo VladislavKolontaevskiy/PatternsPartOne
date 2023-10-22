@@ -29,6 +29,12 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.3'
+
+
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.0'
+    testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
+
+
 }
 
 test {
